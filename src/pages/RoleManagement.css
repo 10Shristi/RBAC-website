@@ -1,0 +1,110 @@
+/* General Container */
+.role-management-container {
+    padding: 40px;
+    background: linear-gradient(to right, #e0e0e0, #f0f0f0);
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+  
+  /* Title */
+  .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  /* Create Role Button */
+  .btn-create {
+    background: linear-gradient(45deg, #6c63ff, #3a40c1);
+    color: white;
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .btn-create:hover {
+    background: linear-gradient(45deg, #3a40c1, #6c63ff);
+  }
+  
+  /* Role Cards */
+  .role-cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .role-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .role-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .role-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  .role-permissions,
+  .role-custom-attributes {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .role-actions {
+    margin-top: 20px;
+  }
+  
+  .role-actions button {
+    background: none;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .role-actions button:hover {
+    color: #007bff;
+  }
+  
+  /* Modal Styling */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px
+  }  
+  
